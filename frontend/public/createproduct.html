@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать товар</title>
+    <link rel = "stylesheet" type="text/css" href="../css/createproduct.css">
+</head>
+<body>
+    <header class="mainheader">
+        <div class="header-nav">
+            <a>Главная</a>
+            <a class="active">Создать товар</a>
+        </div>
+        <div class="header-user">
+            <span class="username" id="username">Загрузка...</span>
+            <span class="user_logo_container">
+                <img class="user_logo" id="user_logo" src="../images/empty_avatar.png"/>
+            </span>
+            <button class="logout">Выйти</button>
+        </div>
+    </header>
+    <main class="maincontent">
+        <div class="product-img-container no-img" aria-required="true">
+            <div class="product-img-text">Перенесите изображение сюда или нажмите, чтобы вставить изображение</div>
+            <!-- <img class="product-img" id="productImg" src="../images/empty_avatar.png"/> -->
+        </div>
+        <textarea class="input" type="text" id="desc" min="0" placeholder="Описание" required></textarea>
+        <input class="input" type="number" id="max_bet" min="0" placeholder="Максимальная ставка" required/>
+        <input class="input" type="datetime-local" id="date_end" required/>
+        <button class="confirm-button" id="confirm-button" type="button">Подтвердить</button>
+    </main>
+</body>

@@ -1,0 +1,116 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel = "stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <header class="mainheader">
+        <div class="header-nav">
+            <a class="active">Главная</a>
+            <a>Создать товар</a>
+        </div>
+        <div class="header-user">
+            <span class="username" id="username">Загрузка...</span>
+            <span class="user_logo_container">
+                <img class="user_logo" id="user_logo" src="../images/empty_avatar.png"/>
+            </span>
+            <button class="logout">Выйти</button>
+        </div>
+    </header>
+    <main class="maincontent">
+        <div class="labelfilter">Сортировка и поиск</div>
+        <div class="filter-container">
+            <input class="filter-input" type="text" id="nameFilter" placeholder="Название товара"/>
+            <input class="filter-input" type="number" id="priceFilter" min="0" placeholder="Максимальная цена"/>
+            <select class="filter-input" id="status" name="status">
+                <option value="По возрастанию" selected>Активен</option>
+                <option value="По убыванию">Истёк</option>
+            </select>
+            <select class="filter-input" id="sort-field" name="sort-field">
+                <option value="По названию">По названию</option>
+                <option value="По максимальной ставке">По максимальной ставке</option>
+                <option value="По оставшемуся времени" selected>По оставшемуся времени</option>
+                <option value="По статусу">По статусу</option>
+            </select>
+            <select class="filter-input" id="subdivision" name="subdivision">
+                <option value="По возрастанию" selected>По возрастанию</option>
+                <option value="По убыванию">По убыванию</option>
+            </select>
+            <button class="find" id="find" type="button">Найти</button>
+        </div>
+        <div class="labelfilter">Товары</div>
+        <div class="product-list" id="productList">
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" id="productImg" src="../images/empty_avatar.png"/>
+                </div>
+                <div class="product-desc">
+                    <div class="product-name" id="productName">Пылесос</div>
+                    <div class="product-text" id="productDesc">Универсальный, мощный, заказанный из Швеции пылесос</div>
+                    <div class="product-text" id="productMaxPrice">Максимальная цена: 5000 рублей</div>
+                    <div class="product-time" id="productTime">Осталось: 23:59:59</div>
+                    <div class="product-status active" id="product-status">Активен</div>
+                    <input class="bet_input" type="number" id="bet_input" min="0" placeholder="Ваша ставка"/>
+                    <button class="product-bet-button" id="product-bet-button" type="button">Поставить</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" id="productImg" src="../images/empty_avatar.png"/>
+                </div>
+                <div class="product-desc">
+                    <div class="product-name" id="productName">Пылесос</div>
+                    <div class="product-text" id="productDesc">Универсальный, мощный, заказанный из Швеции пылесос</div>
+                    <div class="product-text" id="productMaxPrice">Максимальная цена: 5000 рублей</div>
+                    <div class="product-time" id="productTime">Осталось: 00:00:00</div>
+                    <div class="product-status not-active" id="product-status">Истёк</div>
+                    <input class="bet_input disabled" type="number" id="bet_input" min="0" placeholder="Ваша ставка"/>
+                    <button class="product-bet-button disabled" id="product-bet-button" type="button">Поставить</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" id="productImg" src="../images/empty_avatar.png"/>
+                </div>
+                <div class="product-desc">
+                    <div class="product-name" id="productName">Пылесос</div>
+                    <div class="product-text" id="productDesc">Универсальный, мощный, заказанный из Швеции пылесос</div>
+                    <div class="product-text" id="productMaxPrice">Максимальная цена: 5000 рублей</div>
+                    <div class="product-time" id="productTime">Осталось: 23:59:59</div>
+                    <div class="product-status active" id="product-status">Активен</div>
+                    <input class="bet_input" type="number" id="bet_input" min="0" placeholder="Ваша ставка"/>
+                    <button class="product-bet-button" id="product-bet-button" type="button">Поставить</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" id="productImg" src="../images/empty_avatar.png"/>
+                </div>
+                <div class="product-desc">
+                    <div class="product-name" id="productName">Пылесос</div>
+                    <div class="product-text" id="productDesc">Универсальный, мощный, заказанный из Швеции пылесос</div>
+                    <div class="product-text" id="productMaxPrice">Максимальная цена: 5000 рублей</div>
+                    <div class="product-time" id="productTime">Осталось: 23:59:59</div>
+                    <div class="product-status active" id="product-status">Активен</div>
+                    <input class="bet_input" type="number" id="bet_input" min="0" placeholder="Ваша ставка"/>
+                    <button class="product-bet-button" id="product-bet-button" type="button">Поставить</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-img-container">
+                    <img class="product-img" id="productImg" src="../images/empty_avatar.png"/>
+                </div>
+                <div class="product-desc">
+                    <div class="product-name" id="productName">Пылесос</div>
+                    <div class="product-text" id="productDesc">Универсальный, мощный, заказанный из Швеции пылесос</div>
+                    <div class="product-text" id="productMaxPrice">Максимальная цена: 5000 рублей</div>
+                    <div class="product-time" id="productTime">Осталось: 00:00:00</div>
+                    <div class="product-status not-active" id="product-status">Истёк</div>
+                    <input class="bet_input disabled" type="number" id="bet_input" min="0" placeholder="Ваша ставка"/>
+                    <button class="product-bet-button disabled" id="product-bet-button" type="button">Поставить</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.mainheader {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(143, 143, 143);
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.header-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.header-nav a {
+    transition: all 0.3s ease;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.header-nav a.active {
+    text-decoration: underline;
+}
+
+.mainheader a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.header-user {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+}
+
+.user_logo_container {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.user_logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logout {
+    border-radius: 10px;
+    background-color: red;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logout:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px red;
+}
+
+.maincontent {
+    position: absolute;
+    top: 101px;
+    width: 2500px;
+    height: 100%;
+    background-color: white;
+    margin: 20px;
+}
+
+.labelfilter {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-input {
+    width: 250px;
+    height: 48px;
+    border: 1px solid rgb(130, 130, 130);
+    color: black;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.filter-input:focus {
+    border-color: rgb(80, 80, 80);
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(220, 220, 220);
+}
+
+.find {
+    width: 250px;
+    height: 48px;
+    border: none;
+    background-color: rgb(130, 130, 130);
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.find:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgb(180, 180, 180);
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    gap: 20px;
+    row-gap: 20px;
+    padding-bottom: 60px;
+}
+
+.product-container{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 444px;
+    height: 700px;
+    box-shadow: 1px 2px 1px 2px rgb(220, 220, 220);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.product-img-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(220, 220, 220);
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.product-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-desc {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-time {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.product-status{
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.product-status.active{
+    border: 1px solid #64ff6c;
+    background-color: #43b449;
+}
+
+.product-status.not-active{
+    background-color: red;
+    border: 1px solid red;
+}
+
+.bet_input{
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    height: 36px;
+    border: 1px solid rgb(130, 130, 130);
+    color: black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.bet_input:focus {
+    border-color: rgb(80, 80, 80);
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(220, 220, 220);
+}
+
+.product-bet-button {
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 160px;
+    background-color: rgb(130, 130, 130);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-bet-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgb(180, 180, 180);
+}
+
+.bet_input.disabled{
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    pointer-events: none;
+    cursor: none;
+}
+
+.product-bet-button.disabled {
+    background-color: rgb(200, 200, 200);
+    pointer-events: none;
+    cursor: none;
+}
